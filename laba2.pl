@@ -3,7 +3,8 @@
 change([H | T], [H1 | T1], List, ListQ) :-
 	helper(H, H1, List, Q),
 	change(T, T1, Q, ListQ).
-change([], [], S, W):- append(S, [], W).
+	change([], [], S, S).
+%-------change([], [], S, W):- append(S, [], W).
 
 %---- заменяем все Х на У если найдем
 
