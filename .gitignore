@@ -1,2 +1,4 @@
 *.[oa]
 *~
+temp/
+log/*.tmp
